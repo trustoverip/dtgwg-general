@@ -1,0 +1,49 @@
+title: "[Show & Tell] Name of what you are sharing"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to share demos, prototypes, research, implementations, or presentations related to DTG.
+        Both WG members and external builders are welcome to post here.
+  - type: textarea
+    id: what
+    attributes:
+      label: What it is
+      description: A short description — prototype, implementation, paper, presentation, tool?
+    validations:
+      required: true
+  - type: textarea
+    id: components
+    attributes:
+      label: DTG components it touches
+      description: Which parts of the DTG stack does this relate to?
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Where to find it
+      description: Link to repo, paper, demo, recording, or slides.
+      placeholder: "https://"
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - Early prototype
+        - Proof of concept
+        - Working implementation
+        - Published research
+        - Conference presentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback welcome on
+      description: What specific input would be most useful to you?
+    validations:
+      required: false

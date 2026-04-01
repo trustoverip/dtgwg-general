@@ -1,18 +1,42 @@
----
 title: "[Governance] Your topic in one line"
----
-
-## Summary
-<!-- What governance boundary or requirement does the architecture imply? -->
-
-## Where in the architecture this arises
-<!-- e.g. trust registry operation, credential issuance policy, VTA operator requirements -->
-
-## Who is affected
-<!-- Which roles, parties, or institutions would need to make or follow a governance decision here? -->
-
-## The governance question
-<!-- What needs to be decided, defined, or delegated? -->
-
-## Relevant precedents or frameworks
-<!-- Optional: Are there existing governance models in ToIP, DIF, or elsewhere that apply? -->
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to discuss governance boundaries and requirements implied by the DTG architecture.
+        This is about where the architecture requires governance decisions — not about internal WG process.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What governance boundary or requirement does the architecture imply?
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: Where in the architecture this arises
+      description: e.g. trust registry operation, credential issuance policy, VTA operator requirements.
+    validations:
+      required: true
+  - type: textarea
+    id: affected
+    attributes:
+      label: Who is affected
+      description: Which roles, parties, or institutions would need to make or follow a governance decision here?
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: The governance question
+      description: What needs to be decided, defined, or delegated?
+    validations:
+      required: true
+  - type: textarea
+    id: precedents
+    attributes:
+      label: Relevant precedents or frameworks
+      description: Are there existing governance models in ToIP, DIF, or elsewhere that apply?
+    validations:
+      required: false

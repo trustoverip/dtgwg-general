@@ -1,18 +1,42 @@
----
 title: "[Socio-Technical] Your topic in one line"
----
-
-## Summary
-<!-- What is the socio-technical question or concern? -->
-
-## The social dimension
-<!-- What human behavior, social convention, community norm, or power dynamic is involved? -->
-
-## The technical dimension
-<!-- Which technical components or design choices interact with this? -->
-
-## Why this matters for the DTG
-<!-- What breaks or degrades if this is not addressed at the system level? -->
-
-## Suggested approach or open question
-<!-- Optional: A direction worth exploring, or a question the WG should answer. -->
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to discuss how the social and technical layers of DTG interact.
+        This covers human behavior, trust conventions, power dynamics, and community norms across the full system.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is the socio-technical question, concern, proposal, or discussion point?
+    validations:
+      required: true
+  - type: textarea
+    id: social
+    attributes:
+      label: The social dimension
+      description: What human behavior, social convention, community norm, or power dynamic is involved?
+    validations:
+      required: true
+  - type: textarea
+    id: technical
+    attributes:
+      label: The technical dimension
+      description: Which technical components or design choices interact with this?
+    validations:
+      required: true
+  - type: textarea
+    id: matters
+    attributes:
+      label: Why this matters for the DTG
+      description: What breaks or degrades if this is not addressed at the system level?
+    validations:
+      required: false
+  - type: textarea
+    id: approach
+    attributes:
+      label: Suggested approach or open question
+      description: A direction worth exploring, or a question the WG should answer.
+    validations:
+      required: false

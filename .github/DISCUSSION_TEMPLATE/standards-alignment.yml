@@ -1,23 +1,45 @@
----
 title: "[Standards] Your topic in one line"
----
-
-## Summary
-<!-- What is the standards alignment question or concern? -->
-
-## External standard or ecosystem involved
-- [ ] W3C DIDs
-- [ ] W3C Verifiable Credentials
-- [ ] OpenID4VC
-- [ ] DIF protocols
-- [ ] ToIP Technology Architecture
-- [ ] Other:
-
-## How DTG currently relates to it
-<!-- Does DTG depend on, extend, complement, or conflict with this standard? -->
-
-## The issue or opportunity
-<!-- What alignment gap, dependency risk, or interoperability opportunity exists? -->
-
-## Suggested resolution
-<!-- Optional: What should the WG clarify or decide? -->
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to discuss how DTG relates to and depends on external standards and ecosystems.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is the standards alignment question, concern, proposal, or discussion point?
+    validations:
+      required: true
+  - type: checkboxes
+    id: standard
+    attributes:
+      label: External standard or ecosystem involved
+      options:
+        - label: W3C DIDs
+        - label: W3C Verifiable Credentials
+        - label: OpenID4VC
+        - label: DIF protocols
+        - label: ToIP Technology Architecture
+        - label: Other
+  - type: textarea
+    id: relation
+    attributes:
+      label: How DTG currently relates to it
+      description: Does DTG depend on, extend, complement, or conflict with this standard?
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: The issue or opportunity
+      description: What alignment gap, dependency risk, or interoperability opportunity exists?
+    validations:
+      required: true
+  - type: textarea
+    id: resolution
+    attributes:
+      label: Suggested resolution
+      description: What should the WG clarify or decide?
+    validations:
+      required: false

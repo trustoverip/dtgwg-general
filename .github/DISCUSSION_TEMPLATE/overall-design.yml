@@ -1,24 +1,46 @@
----
 title: "[Architecture] Your topic in one line"
----
-
-## Summary
-<!-- What is the architectural question, concern, or proposal? -->
-
-## TF outputs involved
-<!-- Which task force specs or deliverables does this touch? -->
-- [ ] Credentials Spec
-- [ ] Trust Task Protocols Spec
-- [ ] R-Cards Spec
-- [ ] Agent Names Spec
-- [ ] Multiple / cross-cutting
-
-## Current understanding
-<!-- What does the architecture currently say or assume about this? 
-     Link to relevant spec sections or Confluence pages if available. -->
-
-## The issue or proposal
-<!-- What is missing, in tension, or worth reconsidering at the system level? -->
-
-## Suggested next step
-<!-- Optional: What would a resolution look like? A diagram, a decision, a change to a spec? -->
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to discuss how TF outputs compose into a coherent end-to-end system.
+        This is not the place for internals of a single component — those belong in the corresponding TF repo.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is the architectural question, concern, proposal, or discussion point?
+    validations:
+      required: true
+  - type: checkboxes
+    id: tfs
+    attributes:
+      label: TF outputs involved
+      description: Which task force specs or deliverables does this touch?
+      options:
+        - label: Credentials Spec
+        - label: Trust Task Protocols Spec
+        - label: R-Cards Spec
+        - label: Agent Names Spec
+        - label: Multiple / cross-cutting
+  - type: textarea
+    id: current
+    attributes:
+      label: Current understanding
+      description: What does the architecture currently say or assume about this? Link to relevant spec sections or Confluence pages if available.
+    validations:
+      required: false
+  - type: textarea
+    id: issue
+    attributes:
+      label: The issue or proposal
+      description: What is missing, in tension, or worth reconsidering at the system level?
+    validations:
+      required: true
+  - type: textarea
+    id: next
+    attributes:
+      label: Suggested next step
+      description: What would a resolution look like? A diagram, a decision, a change to a spec?
+    validations:
+      required: false

@@ -1,25 +1,48 @@
----
 title: "[Idea] Your proposal in one line"
----
-
-## Summary
-<!-- One paragraph: what are you proposing and why? -->
-
-## Problem it solves
-<!-- What gap, friction, or risk does this address? -->
-
-## Proposed approach
-<!-- How would this work? Even a rough sketch is fine at this stage. -->
-
-## Affected components
-<!-- Which TFs or specs does this touch? -->
-- [ ] Credentials TF
-- [ ] R-Cards TF
-- [ ] Trust Task Protocols TF
-- [ ] Agent Names TF
-- [ ] Risk Assessment & Harms Prevention TF
-- [ ] UX TF
-- [ ] Cross-cutting / Architecture
-
-## Open questions
-<!-- What would need to be figured out before this could move forward? -->
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for early-stage ideas or design alternatives not yet taken up by a Task Force.
+        For specifics of a single TF component, please use the corresponding TF repo instead.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One paragraph — what is your idea or what are you proposing and why?
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem it solves
+      description: What gap, friction, or risk does this address?
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Proposed approach
+      description: How would this work? Even a rough sketch is fine at this stage.
+    validations:
+      required: false
+  - type: checkboxes
+    id: components
+    attributes:
+      label: Affected components
+      description: Which TFs or specs does this touch?
+      options:
+        - label: Credentials TF
+        - label: R-Cards TF
+        - label: Trust Task Protocols TF
+        - label: Agent Names TF
+        - label: Risk Assessment & Harms Prevention TF
+        - label: UX TF
+        - label: Cross-cutting / Architecture
+  - type: textarea
+    id: questions
+    attributes:
+      label: Open questions
+      description: What would need to be figured out before this could move forward?
+    validations:
+      required: false
