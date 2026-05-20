@@ -22,7 +22,7 @@
 
 | Date | Update | Document | Status | Notes |
 |---|---|---|---|---|
-| 2026-05-20 | Added draft baseline for the DTG hybrid interaction architecture, including architecture layers, core components, key interaction patterns, and status caveats for formal terms, implementation-specific elements, and emerging concepts. | [DTG Hybrid Component Architecture Baseline](architecture/dtg-hybrid-interaction-architecture-baseline.md) | Draft baseline v0.1 | Informative contributor-facing architecture document; not a DTG specification. |
+| 2026-05-20 | Added draft baseline for the DTG hybrid interaction architecture, including architecture layers, core components, key interaction patterns, and status caveats for formal terms, implementation-specific elements, and emerging concepts. | [DTG Hybrid Interaction Architecture Baseline](architecture/dtg-hybrid-interaction-architecture-baseline.md) | Draft baseline v0.1 | Informative contributor-facing architecture document; not a DTG specification. |
 
 ## About This Repository
 
