@@ -82,7 +82,7 @@ In simple terms, the **Decentralized Trust Graph** is a decentralized way for pe
 communities, devices, any sort of agents, and so on, to form and prove trust relationships without 
 relying on one central platform or database.
 
-![DTG The Decentralized Trust Graph at a glance](/assets/dtg-concept-overview.svg)
+![DTG The Decentralized Trust Graph at a glance](./assets/dtg-concept-overview.svg)
 
 
 
@@ -114,7 +114,7 @@ Two properties make this possible:
 The DTG architecture is structured through **seven layers**
 that help separate different concerns while influencing each other:
 
-![DTG - the seven DTG architecture layers](/assets/dtg_seven_layers_stack.svg)
+![DTG - the seven DTG architecture layers](./assets/dtg_seven_layers_stack.svg)
 
 
 ---
@@ -181,7 +181,7 @@ into trust relationships. When a DTG presence exists, the actor has a correspond
 **DTG node** in the graph view. Relationships and memberships between those presences 
 are evidenced by DTG credentials and mapped into the **DTG edge** view.
 
-![Actor, DTG presence, and DTG node view](/assets/actor_presence_node_mapping.svg)
+![Actor, DTG presence, and DTG node view](./assets/actor_presence_node_mapping.svg)
 
 
 #### Three modes of control
@@ -198,7 +198,7 @@ A DTG presence can be controlled in three ways. This is what lets the architectu
 
 This is the **human-facing surface** of the DTG: where individuals and community administrators actually interact with the infrastructure, through phones, laptops, browsers, or admin consoles.
 
-![DTG Human access layer components](/assets/human_access_layer.svg)
+![DTG Human access layer components](./assets/human_access_layer.svg)
 
 
 #### Key software components
@@ -239,7 +239,7 @@ endpoint to find, verify, and interact with the presence. Depending on implement
 VTA can support routing, credential exchange, trust tasks, access control, and other 
 interaction functions.
 
-![DTG VTA network supporting one DTG presence](/assets/vta_network_topology.svg)
+![DTG VTA network supporting one DTG presence](./assets/vta_network_topology.svg)
 
 
 #### Two dimensions of VTA distinctions
@@ -289,7 +289,7 @@ The fourth layer provides the **community and network structures** that give DTG
 > **Note:** The Community and Networks layer describes the community and network structures; 
 > Layer VII (Governance) describes the governance rules that determine what counts within or across those structures.
 
-![DTG VTCs inside a Verifiable Trust Network](/assets/vtc_vtn_structure.svg)
+![DTG VTCs inside a Verifiable Trust Network](./assets/vtc_vtn_structure.svg)
 
 
 #### Key community components:
@@ -350,7 +350,7 @@ membership context, a community, a persona. They make presences and relationship
 The relevant VTA endpoint is discovered through whichever DTG VID applies to the entity or 
 context being interacted with.
 
-![DID types in DTG context](/assets/did_types_in_context.svg)
+![DID types in DTG context](./assets/did_types_in_context.svg)
 
 
 
@@ -404,7 +404,7 @@ A **DTG edge view** is the graph-level view of a verifiable relationship between
 Annotation credentials (VPC, VEC, VWC) **do not create new graph structure**. They attach additional information — persona context, endorsement context, witness evidence — to an existing edge, party, or relationship.
 
 
-![DTG edge with VWC annotation](/assets/topology_edge_with_annotation.svg)
+![DTG edge with VWC annotation](./assets/topology_edge_with_annotation.svg)
 
 
 
@@ -461,7 +461,7 @@ example, protocols can verify signatures, identifiers, and credential formats bu
 Those decisions belong to governance.
 
 
-![Governance acceptance flow](/assets/governance_acceptance_flow.svg)
+![Governance acceptance flow](./assets/governance_acceptance_flow.svg)
 
 
 **Governance frameworks** describe the rules under which a community or network operates. They define who may participate, which roles exist, what responsibilities those roles carry, and which credentials, witnesses, issuers, or trust anchors are accepted in a given context.
