@@ -1,0 +1,36 @@
+<svg width="680" height="320" viewBox="0 0 680 320" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>How governance turns a valid credential into accepted trust</title>
+  <desc>A technically valid credential enters governance — checked by Policy Enforcement Point, trust registry, and community policies — and emerges as either accepted or rejected.</desc>
+  <defs>
+    <marker id="arrow-9" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="30" y="120" width="130" height="70" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text x="95" y="145" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#3C3489">Valid credential</text>
+  <text x="95" y="167" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#534AB7">Cryptographically OK</text>
+
+  <line x1="160" y1="155" x2="195" y2="155" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow-9)"/>
+
+  <rect x="195" y="60" width="290" height="200" rx="14" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+  <text x="340" y="84" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#444441">Governance</text>
+
+  <rect x="215" y="105" width="120" height="50" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="275" y="124" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Policy Enforcement</text>
+  <text x="275" y="142" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Point (PEP)</text>
+
+  <rect x="345" y="105" width="120" height="50" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="405" y="124" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Trust registry</text>
+  <text x="405" y="142" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">check</text>
+
+  <rect x="280" y="180" width="120" height="50" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="199" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Community</text>
+  <text x="340" y="217" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">policies</text>
+
+  <line x1="485" y1="155" x2="520" y2="155" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow-9)"/>
+
+  <rect x="520" y="120" width="130" height="70" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+  <text x="585" y="145" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#633806">Accepted</text>
+  <text x="585" y="167" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">Or rejected</text>
+</svg>

@@ -82,35 +82,9 @@ In simple terms, the **Decentralized Trust Graph** is a decentralized way for pe
 communities, devices, any sort of agents, and so on, to form and prove trust relationships without 
 relying on one central platform or database.
 
+![DTG The Decentralized Trust Graph at a glance](/assets/dtg-concept-overview.svg)
 
 
-<p align="center">
-<svg width="100%" viewBox="0 0 680 380" role="img" xmlns="http://www.w3.org/2000/svg" style="max-width:680px"><title>The Decentralized Trust Graph at a glance</title><desc>Four actor types — person, community, device, AI agent — shown as nodes connected by verifiable relationship edges, with no central authority.</desc>
-<defs>
-<marker id="arrow-1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
-</defs>
-<text x="340" y="30" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">No central hub — every actor controls their part of the graph</text>
-<line x1="200" y1="130" x2="360" y2="100" stroke="#888780" stroke-width="0.8" opacity="0.6"/>
-<line x1="200" y1="130" x2="360" y2="260" stroke="#888780" stroke-width="0.8" opacity="0.6"/>
-<line x1="360" y1="100" x2="520" y2="180" stroke="#888780" stroke-width="0.8" opacity="0.6"/>
-<line x1="360" y1="260" x2="520" y2="180" stroke="#888780" stroke-width="0.8" opacity="0.6"/>
-<line x1="360" y1="100" x2="360" y2="260" stroke="#888780" stroke-width="0.8" opacity="0.6"/>
-<line x1="200" y1="130" x2="520" y2="180" stroke="#888780" stroke-width="0.8" opacity="0.6"/>
-<rect x="130" y="105" width="140" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-<text x="200" y="128" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#3C3489">Person</text>
-<text x="200" y="146" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#534AB7">Holds credentials</text>
-<rect x="290" y="72" width="140" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="360" y="95" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#085041">Community</text>
-<text x="360" y="113" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Governs members</text>
-<rect x="290" y="235" width="140" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
-<text x="360" y="258" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#712B13">Device</text>
-<text x="360" y="276" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#993C1D">Sensor, robot, IoT</text>
-<rect x="450" y="155" width="140" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-<text x="520" y="178" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#633806">AI agent</text>
-<text x="520" y="196" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">Acts under delegation</text>
-<text x="340" y="330" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">Edges are verifiable relationships — backed by credentials, not a central database</text>
-</svg>
-</p>
 
 ### Why "graph"?
 
@@ -140,34 +114,8 @@ Two properties make this possible:
 The DTG architecture is structured through **seven layers**
 that help separate different concerns while influencing each other:
 
+![DTG - the seven DTG architecture layers](/assets/dtg_seven_layers_stack.svg)
 
-
-<p align="center">
-<svg width="100%" viewBox="0 0 680 540" role="img" xmlns="http://www.w3.org/2000/svg" style="max-width:680px"><title>The seven DTG architecture layers</title><desc>Seven layers stacked vertically, from actors at the top through access, management, communities, standards, topology, to governance — these are concern-separations, not protocol-stack layers.</desc>
-<rect x="120" y="40" width="440" height="50" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-<text x="340" y="60" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#3C3489">Layer I — Actors and entities</text>
-<text x="340" y="78" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#534AB7">Who or what participates</text>
-<rect x="120" y="105" width="440" height="50" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="340" y="125" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#085041">Layer II — Human access</text>
-<text x="340" y="143" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">PNM, CNM, wallet, access devices</text>
-<rect x="120" y="170" width="440" height="50" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="340" y="190" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#085041">Layer III — Management infrastructure</text>
-<text x="340" y="208" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">VTAs and VTA networks</text>
-<rect x="120" y="235" width="440" height="50" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="340" y="255" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#085041">Layer IV — Communities and networks</text>
-<text x="340" y="273" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">VTCs, VTNs, trust registries</text>
-<rect x="120" y="300" width="440" height="50" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
-<text x="340" y="320" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#712B13">Layer V — Standards and protocols</text>
-<text x="340" y="338" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#993C1D">DIDs, credentials, trust tasks</text>
-<rect x="120" y="365" width="440" height="50" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-<text x="340" y="385" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#633806">Layer VI — Topology</text>
-<text x="340" y="403" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">Node view and edge view</text>
-<rect x="120" y="430" width="440" height="50" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
-<text x="340" y="450" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#444441">Layer VII — Governance</text>
-<text x="340" y="468" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">What counts, who is trusted</text>
-<text x="340" y="510" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">Layers interpret and depend on each other — they are not a protocol stack</text>
-</svg>
-</p>
 
 ---
 
@@ -223,7 +171,7 @@ Core actor types:
 - People
 - Communities
 - Devices
-- AI agents
+- Agents, including AI agents and other software-based agents
 
 These actors exist independently of the DTG. What the DTG cares about is their 
 **DTG presence**: the actor's operational presence in the graph. A DTG presence is 
@@ -233,32 +181,8 @@ into trust relationships. When a DTG presence exists, the actor has a correspond
 **DTG node** in the graph view. Relationships and memberships between those presences 
 are evidenced by DTG credentials and mapped into the **DTG edge** view.
 
+![Actor, DTG presence, and DTG node view](/assets/actor_presence_node_mapping.svg)
 
-<p align="center">
-<svg width="100%" viewBox="0 0 680 320" role="img" xmlns="http://www.w3.org/2000/svg" style="max-width:680px"><title>Actor, DTG presence, and DTG node view</title><desc>Three-stage mapping: a real-world actor has a DTG presence, identified by a DID and reached via a VTA, which is then interpreted as a node in the graph.</desc>
-<defs>
-<marker id="arrow-3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
-</defs>
-<rect x="40" y="100" width="170" height="80" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-<text x="125" y="130" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#3C3489">Actor / entity</text>
-<text x="125" y="152" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#534AB7">Person, community,</text>
-<text x="125" y="168" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#534AB7">device, AI agent</text>
-<rect x="255" y="100" width="170" height="80" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="340" y="130" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#085041">DTG presence</text>
-<text x="340" y="152" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Identified by DID,</text>
-<text x="340" y="168" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">reached via VTA</text>
-<rect x="470" y="100" width="170" height="80" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-<text x="555" y="130" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#633806">DTG node view</text>
-<text x="555" y="152" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">Graph-level</text>
-<text x="555" y="168" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">interpretation</text>
-<line x1="210" y1="140" x2="248" y2="140" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow-3)"/>
-<line x1="425" y1="140" x2="463" y2="140" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow-3)"/>
-<text x="229" y="90" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">has</text>
-<text x="444" y="90" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">interpreted as</text>
-<text x="340" y="230" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">The actor is not the node. The presence is not the actor.</text>
-<text x="340" y="250" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">The node view is the graph-level interpretation of the presence.</text>
-</svg>
-</p>
 
 #### Three modes of control
 
@@ -274,32 +198,8 @@ A DTG presence can be controlled in three ways. This is what lets the architectu
 
 This is the **human-facing surface** of the DTG: where individuals and community administrators actually interact with the infrastructure, through phones, laptops, browsers, or admin consoles.
 
+![DTG Human access layer components](/assets/human_access_layer.svg)
 
-<p align="center">
-<svg width="100%" viewBox="0 0 680 380" role="img" xmlns="http://www.w3.org/2000/svg" style="max-width:680px"><title>Human access layer components</title><desc>A person uses an access device hosting a Personal Network Manager and a Personal Network Vault, which connects down to VTA infrastructure.</desc>
-<defs>
-<marker id="arrow-4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
-</defs>
-<rect x="270" y="30" width="140" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-<text x="340" y="52" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#3C3489">Person</text>
-<line x1="340" y1="74" x2="340" y2="100" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow-4)"/>
-<rect x="190" y="100" width="300" height="160" rx="12" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
-<text x="340" y="120" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#444441">Access device</text>
-<text x="340" y="138" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">Phone, laptop, browser</text>
-<rect x="210" y="160" width="125" height="80" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="272" y="185" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#085041">PNM or CNM</text>
-<text x="272" y="205" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Manages trust</text>
-<text x="272" y="221" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">relationships</text>
-<rect x="345" y="160" width="125" height="80" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
-<text x="407" y="185" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#712B13">PNV / wallet</text>
-<text x="407" y="205" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#993C1D">Stores keys and</text>
-<text x="407" y="221" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#993C1D">credentials</text>
-<line x1="340" y1="260" x2="340" y2="290" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow-4)"/>
-<rect x="220" y="290" width="240" height="50" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-<text x="340" y="310" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#633806">VTA infrastructure</text>
-<text x="340" y="328" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">Management layer (see next diagram)</text>
-</svg>
-</p>
 
 #### Key software components
 
@@ -339,31 +239,8 @@ endpoint to find, verify, and interact with the presence. Depending on implement
 VTA can support routing, credential exchange, trust tasks, access control, and other 
 interaction functions.
 
+![DTG VTA network supporting one DTG presence](/assets/vta_network_topology.svg)
 
-<p align="center">
-<svg width="100%" viewBox="0 0 680 360" role="img" xmlns="http://www.w3.org/2000/svg" style="max-width:680px"><title>A VTA network supporting one DTG presence</title><desc>One DTG presence supported by multiple VTAs: a local VTA on a phone, a local VTA on a laptop, and a cloud VTA for availability — all together forming a VTA network.</desc>
-<rect x="260" y="40" width="160" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-<text x="340" y="63" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#3C3489">DTG presence</text>
-<text x="340" y="81" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#534AB7">One presence, many agents</text>
-<rect x="80" y="160" width="520" height="160" rx="14" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
-<text x="100" y="180" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#444441">VTA network</text>
-<rect x="105" y="210" width="150" height="80" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="180" y="234" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#085041">Local VTA</text>
-<text x="180" y="254" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">on phone</text>
-<text x="180" y="272" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">edge device</text>
-<rect x="265" y="210" width="150" height="80" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="340" y="234" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#085041">Local VTA</text>
-<text x="340" y="254" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">on laptop</text>
-<text x="340" y="272" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">edge device</text>
-<rect x="425" y="210" width="150" height="80" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-<text x="500" y="234" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#633806">Cloud VTA</text>
-<text x="500" y="254" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">server side</text>
-<text x="500" y="272" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">availability, routing</text>
-<line x1="340" y1="96" x2="180" y2="207" stroke="#888780" stroke-width="0.8" opacity="0.6"/>
-<line x1="340" y1="96" x2="340" y2="207" stroke="#888780" stroke-width="0.8" opacity="0.6"/>
-<line x1="340" y1="96" x2="500" y2="207" stroke="#888780" stroke-width="0.8" opacity="0.6"/>
-</svg>
-</p>
 
 #### Two dimensions of VTA distinctions
 
@@ -412,35 +289,8 @@ The fourth layer provides the **community and network structures** that give DTG
 > **Note:** The Community and Networks layer describes the community and network structures; 
 > Layer VII (Governance) describes the governance rules that determine what counts within or across those structures.
 
-<p align="center">
-<svg width="100%" viewBox="0 0 680 380" role="img" xmlns="http://www.w3.org/2000/svg" style="max-width:680px"><title>Communities inside a Verifiable Trust Network</title><desc>A Verifiable Trust Network contains multiple Verifiable Trust Communities, each of which contains its own members. A trust registry sits alongside for discoverability.</desc>
-<rect x="40" y="60" width="500" height="290" rx="20" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-<text x="60" y="84" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#3C3489">Verifiable Trust Network (VTN)</text>
-<text x="60" y="102" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#534AB7">Governs recognition across VTCs</text>
-<rect x="70" y="130" width="220" height="200" rx="12" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="180" y="152" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#085041">VTC A</text>
-<text x="180" y="170" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Identified by C-DID</text>
-<rect x="90" y="195" width="80" height="40" rx="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-<text x="130" y="217" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">Member</text>
-<rect x="190" y="195" width="80" height="40" rx="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-<text x="230" y="217" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">Member</text>
-<rect x="140" y="260" width="80" height="40" rx="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-<text x="180" y="282" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">Member</text>
-<rect x="310" y="130" width="220" height="200" rx="12" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
-<text x="420" y="152" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#712B13">VTC B</text>
-<text x="420" y="170" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#993C1D">Identified by C-DID</text>
-<rect x="330" y="195" width="80" height="40" rx="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-<text x="370" y="217" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">Member</text>
-<rect x="430" y="195" width="80" height="40" rx="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-<text x="470" y="217" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">Member</text>
-<rect x="380" y="260" width="80" height="40" rx="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-<text x="420" y="282" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">Member</text>
-<rect x="560" y="180" width="100" height="90" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
-<text x="610" y="208" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#444441">Trust</text>
-<text x="610" y="226" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#444441">registry</text>
-<text x="610" y="248" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">Discoverability</text>
-</svg>
-</p>
+![DTG VTCs inside a Verifiable Trust Network](/assets/vtc_vtn_structure.svg)
+
 
 #### Key community components:
 
@@ -500,41 +350,9 @@ membership context, a community, a persona. They make presences and relationship
 The relevant VTA endpoint is discovered through whichever DTG VID applies to the entity or 
 context being interacted with.
 
+![DID types in DTG context](/assets/did_types_in_context.svg)
 
-<p align="center">
-<svg width="100%" viewBox="0 0 680 360" role="img" xmlns="http://www.w3.org/2000/svg" style="max-width:680px"><title>The four DTG DID types and what they identify</title><desc>R-DID identifies a peer-to-peer relationship party context, M-DID a membership context, C-DID a community, P-DID a persona.</desc>
-<rect x="40" y="50" width="140" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-<text x="110" y="73" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#3C3489">R-DID</text>
-<text x="110" y="91" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#534AB7">Relationship party</text>
-<rect x="40" y="140" width="140" height="60" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
-<text x="110" y="162" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">Used between two</text>
-<text x="110" y="180" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">peers in a pairwise</text>
-<text x="110" y="198" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">relationship</text>
-<rect x="200" y="50" width="140" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="270" y="73" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#085041">M-DID</text>
-<text x="270" y="91" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Membership context</text>
-<rect x="200" y="140" width="140" height="60" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
-<text x="270" y="162" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">Identifies a member</text>
-<text x="270" y="180" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">within a specific</text>
-<text x="270" y="198" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">community</text>
-<rect x="360" y="50" width="140" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
-<text x="430" y="73" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#712B13">C-DID</text>
-<text x="430" y="91" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#993C1D">Community</text>
-<rect x="360" y="140" width="140" height="60" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
-<text x="430" y="162" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">Identifies a VTC</text>
-<text x="430" y="180" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">itself, as its own</text>
-<text x="430" y="198" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">DTG presence</text>
-<rect x="520" y="50" width="140" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-<text x="590" y="73" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#633806">P-DID</text>
-<text x="590" y="91" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">Persona</text>
-<rect x="520" y="140" width="140" height="60" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
-<text x="590" y="162" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">Identifies a persona</text>
-<text x="590" y="180" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">for intentional</text>
-<text x="590" y="198" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">correlation</text>
-<text x="340" y="260" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">Each DID identifies a trust context — not always a standalone DTG node.</text>
-<text x="340" y="280" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">All four are DIDs, which are one type of Verifiable Identifier (VID).</text>
-</svg>
-</p>
+
 
 #### DTG credentials
 
@@ -586,28 +404,9 @@ A **DTG edge view** is the graph-level view of a verifiable relationship between
 Annotation credentials (VPC, VEC, VWC) **do not create new graph structure**. They attach additional information — persona context, endorsement context, witness evidence — to an existing edge, party, or relationship.
 
 
-<p align="center">
-<svg width="100%" viewBox="0 0 680 360" role="img" xmlns="http://www.w3.org/2000/svg" style="max-width:680px"><title>DTG edge formed by a VRC pair, annotated by a VWC</title><desc>Two DTG node views connected by a Verifiable Relationship Credential exchanged in both directions, forming an edge. A Verifiable Witness Credential annotates the edge without creating new graph structure.</desc>
-<defs>
-<marker id="arrow-8" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
-</defs>
-<rect x="60" y="130" width="160" height="70" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-<text x="140" y="155" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#3C3489">Node view A</text>
-<text x="140" y="178" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#534AB7">Alice's DTG presence</text>
-<rect x="460" y="130" width="160" height="70" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-<text x="540" y="155" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#3C3489">Node view B</text>
-<text x="540" y="178" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#534AB7">Bob's DTG presence</text>
-<line x1="220" y1="155" x2="460" y2="155" stroke="#534AB7" stroke-width="1.5" marker-end="url(#arrow-8)"/>
-<line x1="460" y1="180" x2="220" y2="180" stroke="#534AB7" stroke-width="1.5" marker-end="url(#arrow-8)"/>
-<text x="340" y="142" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">VRC from A</text>
-<text x="340" y="200" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">VRC from B</text>
-<text x="340" y="225" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#444441">= DTG edge view</text>
-<line x1="340" y1="240" x2="340" y2="285" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 3"/>
-<rect x="240" y="285" width="200" height="50" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-<text x="340" y="305" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#633806">VWC annotation</text>
-<text x="340" y="323" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">Adds witness evidence — no new edge</text>
-</svg>
-</p>
+![DTG edge with VWC annotation](/assets/topology_edge_with_annotation.svg)
+
+
 
 #### Mapping language
 
@@ -662,32 +461,7 @@ example, protocols can verify signatures, identifiers, and credential formats bu
 Those decisions belong to governance.
 
 
-<p align="center">
-<svg width="100%" viewBox="0 0 680 320" role="img" xmlns="http://www.w3.org/2000/svg" style="max-width:680px"><title>How governance turns a valid credential into accepted trust</title><desc>A technically valid credential enters governance — checked by Policy Enforcement Point, trust registry, and community policies — and emerges as either accepted or rejected.</desc>
-<defs>
-<marker id="arrow-9" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
-</defs>
-<rect x="30" y="120" width="130" height="70" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-<text x="95" y="145" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#3C3489">Valid credential</text>
-<text x="95" y="167" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#534AB7">Cryptographically OK</text>
-<line x1="160" y1="155" x2="195" y2="155" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow-9)"/>
-<rect x="195" y="60" width="290" height="200" rx="14" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
-<text x="340" y="84" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#444441">Governance</text>
-<rect x="215" y="105" width="120" height="50" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="275" y="124" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Policy Enforcement</text>
-<text x="275" y="142" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Point (PEP)</text>
-<rect x="345" y="105" width="120" height="50" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="405" y="124" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Trust registry</text>
-<text x="405" y="142" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">check</text>
-<rect x="280" y="180" width="120" height="50" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="340" y="199" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Community</text>
-<text x="340" y="217" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">policies</text>
-<line x1="485" y1="155" x2="520" y2="155" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow-9)"/>
-<rect x="520" y="120" width="130" height="70" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
-<text x="585" y="145" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#633806">Accepted</text>
-<text x="585" y="167" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#854F0B">Or rejected</text>
-</svg>
-</p>
+![Governance acceptance flow](/assets/governance_acceptance_flow.svg)
 
 
 **Governance frameworks** describe the rules under which a community or network operates. They define who may participate, which roles exist, what responsibilities those roles carry, and which credentials, witnesses, issuers, or trust anchors are accepted in a given context.
@@ -724,29 +498,7 @@ social, and cultural context** in which these exchanges actually happen.
 
 That's the role of **ceremonies**.
 
-<p align="center">
-<svg width="100%" viewBox="0 0 680 360" role="img" xmlns="http://www.w3.org/2000/svg" style="max-width:680px"><title>A ceremony wraps a technical credential exchange in social context</title><desc>A technically valid credential exchange sits inside a broader ceremony that adds consent, witnessing, cultural meaning, and recognition — any of which can leave the ceremony socially incomplete.</desc>
-<rect x="40" y="50" width="600" height="270" rx="20" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-<text x="60" y="78" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#3C3489">Ceremony — the human-meaningful context</text>
-<rect x="240" y="170" width="200" height="80" rx="10" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
-<text x="340" y="195" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#444441">Credential exchange</text>
-<text x="340" y="217" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">Technically valid,</text>
-<text x="340" y="233" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">trust task complete</text>
-<rect x="70" y="110" width="140" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="140" y="132" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Consent</text>
-<rect x="470" y="110" width="140" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="540" y="132" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Witnessing</text>
-<rect x="70" y="260" width="140" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="140" y="282" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Cultural meaning</text>
-<rect x="470" y="260" width="140" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="540" y="282" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#0F6E56">Recognition</text>
-<line x1="210" y1="132" x2="240" y2="180" stroke="#888780" stroke-width="0.8" opacity="0.5"/>
-<line x1="470" y1="132" x2="440" y2="180" stroke="#888780" stroke-width="0.8" opacity="0.5"/>
-<line x1="210" y1="282" x2="240" y2="240" stroke="#888780" stroke-width="0.8" opacity="0.5"/>
-<line x1="470" y1="282" x2="440" y2="240" stroke="#888780" stroke-width="0.8" opacity="0.5"/>
-</svg>
-</p>
-
+![Ceremony wraps credential exchange](./assets/ceremony_wraps_exchange.svg)
 
 
 #### The importance of ceremonies
