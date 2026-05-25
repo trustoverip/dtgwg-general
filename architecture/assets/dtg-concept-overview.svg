@@ -1,0 +1,31 @@
+<svg width="100%" viewBox="0 0 680 380" role="img" xmlns="http://www.w3.org/2000/svg" style="max-width:680px">
+  <title>The Decentralized Trust Graph at a glance</title>
+  <desc>Four actor types — person, community, device, (AI) agent — shown as nodes connected by verifiable relationship edges, with no central authority.</desc>
+
+  <text x="340" y="30" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">No central hub — every actor controls their part of the graph</text>
+
+  <line x1="200" y1="130" x2="360" y2="100" stroke="#888780" stroke-width="0.8" opacity="0.6"/>
+  <line x1="200" y1="130" x2="360" y2="260" stroke="#888780" stroke-width="0.8" opacity="0.6"/>
+  <line x1="360" y1="100" x2="520" y2="180" stroke="#888780" stroke-width="0.8" opacity="0.6"/>
+  <line x1="360" y1="260" x2="520" y2="180" stroke="#888780" stroke-width="0.8" opacity="0.6"/>
+  <line x1="360" y1="100" x2="360" y2="260" stroke="#888780" stroke-width="0.8" opacity="0.6"/>
+  <line x1="200" y1="130" x2="520" y2="180" stroke="#888780" stroke-width="0.8" opacity="0.6"/>
+
+  <rect x="130" y="105" width="140" height="56" rx="8" fill="#F5F0FF" stroke="#B7A7E8" stroke-width="0.7"/>
+  <text x="200" y="128" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#4B3B83">Person</text>
+  <text x="200" y="146" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#4B3B83">Holds credentials</text>
+
+  <rect x="290" y="72" width="140" height="56" rx="8" fill="#EAFBFA" stroke="#8FD3CE" stroke-width="0.7"/>
+  <text x="360" y="95" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#176B66">Community</text>
+  <text x="360" y="113" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#176B66">Membership Context</text>
+
+  <rect x="290" y="235" width="140" height="56" rx="8" fill="#FFF0E5" stroke="#E7B28D" stroke-width="0.7"/>
+  <text x="360" y="258" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#8A4A21">Device</text>
+  <text x="360" y="276" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#8A4A21">Sensor, robot, IoT</text>
+
+  <rect x="450" y="155" width="140" height="56" rx="8" fill="#FFF0F6" stroke="#E5A3C1" stroke-width="0.7"/>
+  <text x="520" y="178" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#874263">(AI) agent</text>
+  <text x="520" y="196" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#874263">Acts under delegation</text>
+
+  <text x="340" y="330" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">Edges are verifiable relationships — backed by credentials, not a central database</text>
+</svg>
