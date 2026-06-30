@@ -1,0 +1,12 @@
+#macOS
+.DS_Store
+
+#VS Code
+.vscode/
+
+#Local environment
+.env
+
+#Genrated files
+output/
+*.log
