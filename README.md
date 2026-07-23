@@ -92,7 +92,7 @@ Each DTGWG Task Force operates its own repository and discussion forum. Please f
 | **Trust Task Protocols** | Define trust task protocols for standard DTG trust tasks, including QR codes, pairwise private DID exchange, PHC/VRC issuance and verification, r-card exchange, and personal private channels. | [dtgwg-trust-tasks-tf](https://github.com/trustoverip/dtgwg-trust-tasks-tf) | [Discussions](https://github.com/trustoverip/dtgwg-trust-tasks-tf/discussions) |
 | **Agent Names** | Define a syntax, resolution protocol, and service endpoints for URL strings that resolve to DIDs and DID documents for communicating with DTG verifiable trust agents (VTAs). | [dtgwg-agent-names-tf](https://github.com/trustoverip/dtgwg-agent-names-tf) | [Discussions](https://github.com/trustoverip/dtgwg-agent-names-tf/discussions) |
 | **DTG ZKP** | Define the ZKP requirements and designs necessary to make privacy-preserving proofs about DTG credentials | [dtg-zkp-tf](https://github.com/trustoverip/dtgwg-zkp-tf) | [Discussions](https://github.com/trustoverip/dtgwg-zkp-tf/discussions) |
-| **DTG UX** | Define UX requirements and guidelines for sovereign wallets and standard user ceremonies for each of the primary trust tasks above. | [dtg-ux-tf](https://github.com/trustoverip/dtgwg-ux-tf) | [Discussions](https://github.com/trustoverip/dtgwg-ux-tf/discussions) |
+| **DTG HTX** | Define Human Trust Experience requirements and guidelines for sovereign wallets and standard user ceremonies for each of the primary trust tasks above. | [dtg-htx-tf](https://github.com/trustoverip/dtgwg-htx-tf) | [Discussions](https://github.com/trustoverip/dtgwg-htx-tf/discussions) |
 
 
 [↑ Back to top](#decentralized-trust-graph-working-group-dtgwg)
