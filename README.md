@@ -6,32 +6,23 @@
 
 ---
 
-## Table of Content
-- [Latest Updates](#latest-updates)
+## Table of Contents
 - [About This Repository](#about-this-repository)
 - [DTGWG Overview](#dtgwg-overview)
 - [DTGWG Scope](#dtgwg-scope)
-- [Task Force Repositories and Discussions](#task-force-repositories-and-discussions)
+- [Task Force Repositories, Discussions, and Specifications](#task-force-repositories-discussions-and-specifications)
 - [LF Decentralized Trust Labs](#lf-decentralized-trust-lab-repositories)
 - [How to Participate](#how-to-participate)
 - [Licensing](#licensing)
 
 ---
-## Latest Updates
-
-| Date | Update | Document | Status | Notes |
-|---|---|---|---|---|
-| 2026-06-30 | Added information about human collaboration with focus on AI-supported contributions and Github handles in this space. | [Human Collaboration](docs/collaboration.md) | v0.1 | Informative contributor-facing collaboration document. |
-| 2026-05-20 | Added draft baseline for the DTG hybrid interaction architecture, including architecture layers, core components, key interaction patterns, and status caveats for formal terms, implementation-specific elements, and emerging concepts. | [DTG Hybrid Interaction Architecture Baseline](architecture/dtg-hybrid-interaction-architecture-baseline.md) | Draft baseline v0.1 | Informative contributor-facing architecture document; not a DTG specification. |
 
 ## About This Repository
 
 This is the umbrella repository for the Decentralized Trust Graph Working Group (DTGWG).
 It is designed to serve as an entry point to our work and a guide to all our resources.
 
-It links to the individual repositories maintained by each DTGWG Task Force, where corresponding 
-topic-specific specifications, deliverables, and discussions live, as well as to the 
-LF Decentralized Trust Labs that provide early-stage implementations of the DTGWG specifications.
+It links to the individual repositories maintained by each DTGWG Task Force, where corresponding specifications, deliverables, and discussions live, as well as to the LF Decentralized Trust Labs projects that provide early-stage implementations of the DTGWG specifications.
 
 Beyond navigation, the [discussions](https://github.com/trustoverip/dtgwg-general/discussions) in this umbrella repository acts as the "glue between the pieces" serving as the home for overarching conversations and developments that span task forces, such as architectural concepts, onboarding flows, or sociotechnical interactions and ceremonies that draw on and integrate deliverables from across the group.
 
@@ -41,10 +32,12 @@ Beyond navigation, the [discussions](https://github.com/trustoverip/dtgwg-genera
 
 ## DTGWG Overview
 
-The DTGWG develops the specifications, components, tooling, and governance components needed to build a decentralized trust graph (DTG) —
+The DTGWG develops the specifications, components, tooling, and governance components needed to build a **decentralized trust graph (DTG)** —
 enabling proof of personhood, proof of agenthood, and the creation of verifiable trust relationships between people, devices, groups/communities/organizations of any type, and AI agents — all without requiring a centralized database.
 
 Every party controls their own portable subgraph of the DTG through their own digital agents and wallets.
+
+When the DTG is implemented on top of the [ToIP stack](https://trustoverip.org/toip-model/), this combination is called **verifiable trust infrastructure (VTI)**.
 
 [↑ Back to top](#decentralized-trust-graph-working-group-dtgwg)
 
@@ -59,12 +52,12 @@ trust graph, including:
 - Verifiable identifiers (e.g., decentralized identifiers) and verifiable credentials
 - Verifiable relationship credentials and social vouching
 - Verifiable membership credentials and verifiable trust communities
-- Relationship cards (r-cards)
+- Relationship cards (r-cards) and other verifiable data structures
 - Privacy-preserving zero-knowledge proofs
-- Verifiable trust agents (VTAs) and rust task protocols
+- Verifiable trust agents (VTAs) that speak [trust task protocols](https://trusttasks.org/)
 - Trust registries
 - Out-of-band introductions
-- UI/UX affordances for DTG wallets
+- UI/UX affordances for VTAs and trust tasks
 
 The work is based open standards for decentralized identity and trust — principally
 [W3C Decentralized Identifiers (DIDs) 1.0](https://www.w3.org/TR/did-core/) and
@@ -73,26 +66,27 @@ The work is based open standards for decentralized identity and trust — princi
 It builds on
 [*Design Principles for the ToIP Stack*](https://trustoverip.org/permalink/Design-Principles-for-the-ToIP-Stack-V1.0-2022-11-17.pdf),
 the [*ToIP Technology Architecture Specification*](https://trustoverip.github.io/TechArch/),
-other ToIP technical specifications, and complementary open standards for
-decentralized digital trust infrastructure.
+other ToIP technical specifications, and complementary open standards for decentralized digital trust infrastructure.
 
 [↑ Back to top](#decentralized-trust-graph-working-group-dtgwg)
 
 ---
 
-## Task Force Repositories and Discussions
+## Task Force Repositories, Discussions, and Specifications
 
-Each DTGWG Task Force operates its own repository and discussion forum. Please feel free to cross-link discussions that cross more than one Task Force.
+Each DTGWG Task Force operates its own repository and discussion forum. Feel free to cross-link discussions that cross more than one Task Force.
 
-| Task Force | Focus Area | Repository | Discussions |
-|---|---|---|---|
-| **Risk Assessment & Harms Prevention** | Analyses the overall requirements and potential harms for a successful decentralized trust graph, produces a risk assessment analysis and a recommendation on policies and best practices to prevent harms. | [dtgwg-rahp-tf](https://github.com/trustoverip/dtgwg-rahp-tf) | [Discussions](https://github.com/trustoverip/dtgwg-rahp-tf/discussions) |
-| **Credentials** | Define the technical requirements for personhood credentials (PHCs) and verifiable relationship credential (VRCs), including credential formats, signature algorithms, zero-knowledge proofs, and revocation mechanisms. | [dtgwg-cred-tf](https://github.com/trustoverip/dtgwg-cred-tf) | [Discussions](https://github.com/trustoverip/dtgwg-cred-tf/discussions) |
-| **R-Cards** | Define the technical requirements for relationship card (r-card) interoperability and extensibility. | [dtgwg-rcards-tf](https://github.com/trustoverip/dtgwg-rcards-tf) | [Discussions](https://github.com/trustoverip/dtgwg-rcards-tf/discussions) |
-| **Trust Task Protocols** | Define trust task protocols for standard DTG trust tasks, including QR codes, pairwise private DID exchange, PHC/VRC issuance and verification, r-card exchange, and personal private channels. | [dtgwg-trust-tasks-tf](https://github.com/trustoverip/dtgwg-trust-tasks-tf) | [Discussions](https://github.com/trustoverip/dtgwg-trust-tasks-tf/discussions) |
-| **Agent Names** | Define a syntax, resolution protocol, and service endpoints for URL strings that resolve to DIDs and DID documents for communicating with DTG verifiable trust agents (VTAs). | [dtgwg-agent-names-tf](https://github.com/trustoverip/dtgwg-agent-names-tf) | [Discussions](https://github.com/trustoverip/dtgwg-agent-names-tf/discussions) |
-| **DTG ZKP** | Define the ZKP requirements and designs necessary to make privacy-preserving proofs about DTG credentials | [dtg-zkp-tf](https://github.com/trustoverip/dtgwg-zkp-tf) | [Discussions](https://github.com/trustoverip/dtgwg-zkp-tf/discussions) |
-| **DTG HTX** | Define Human Trust Experience requirements and guidelines for sovereign wallets and standard user ceremonies for each of the primary trust tasks above. | [dtg-htx-tf](https://github.com/trustoverip/dtgwg-htx-tf) | [Discussions](https://github.com/trustoverip/dtgwg-htx-tf/discussions) |
+Note: the umbrella spec for the entire DTG suite is the [VTI specification](https://trustoverip.github.io/dtgwg-vti-spec/).
+
+| Task Force | Focus Area | Repository | Discussions | Specifications |
+|---|---|---|---|---|
+| **Risk Assessment & Harms Prevention** | Analyses the overall requirements and potential harms for a successful decentralized trust graph, produces a risk assessment analysis and a recommendation on policies and best practices to prevent harms. | [dtgwg-rahp-tf](https://github.com/trustoverip/dtgwg-rahp-tf) | [Discussions](https://github.com/trustoverip/dtgwg-rahp-tf/discussions) | N/A |
+| **Credentials** | Define the technical requirements for personhood credentials (PHCs) and verifiable relationship credential (VRCs), including credential formats, signature algorithms, zero-knowledge proofs, and revocation mechanisms. | [dtgwg-cred-tf](https://github.com/trustoverip/dtgwg-cred-tf) | [Discussions](https://github.com/trustoverip/dtgwg-cred-tf/discussions) | [Specification](https://trustoverip.github.io/dtgwg-cred-spec/) |
+| **Trust Task Protocols** | Define trust task protocols for standard DTG trust tasks, including QR codes, pairwise private DID exchange, PHC/VRC issuance and verification, r-card exchange, private channel messaging, verifiable data rooms, etc. | [dtgwg-trust-tasks-tf](https://github.com/trustoverip/dtgwg-trust-tasks-tf) | [Discussions](https://github.com/trustoverip/dtgwg-trust-tasks-tf/discussions) | [Specification](https://trustoverip.github.io/dtgwg-trust-tasks-spec/) |
+| **Verifiable Data Structures (VDS)** | Define the technical requirements for relationship cards (r-cards), agent cards, and other verifiable data structures. | [dtgwg-rcards-tf](https://github.com/trustoverip/dtgwg-rcards-tf) | [Discussions](https://github.com/trustoverip/dtgwg-rcards-tf/discussions) | Coming Soon |
+| **Agent Names** | Define a syntax, resolution protocol, and service endpoints for URL strings that resolve to DIDs and DID documents for communicating with verifiable trust agents (VTAs). | [dtgwg-agent-names-tf](https://github.com/trustoverip/dtgwg-agent-names-tf) | [Discussions](https://github.com/trustoverip/dtgwg-agent-names-tf/discussions) | Coming Soon |
+| **DTG ZKP** | Define the ZKP requirements and designs necessary to make privacy-preserving proofs about DTG credentials | [dtg-zkp-tf](https://github.com/trustoverip/dtgwg-zkp-tf) | [Discussions](https://github.com/trustoverip/dtgwg-zkp-tf/discussions) | [Specification](https://trustoverip.github.io/dtgwg-zkp-spec/) |
+| **DTG HTX** | Define Human Trust Experience requirements and guidelines for VTI wallets and standard user ceremonies for trust tasks. | [dtg-htx-tf](https://github.com/trustoverip/dtgwg-htx-tf) | [Discussions](https://github.com/trustoverip/dtgwg-htx-tf/discussions) | TBD |
 
 
 [↑ Back to top](#decentralized-trust-graph-working-group-dtgwg)
